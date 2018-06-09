@@ -13,6 +13,9 @@
 		560EB57820CC4C6500C8EC0C /* NoiseMachine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 560EB57620CC4C6500C8EC0C /* NoiseMachine.xcdatamodeld */; };
 		560EB57A20CC4C6600C8EC0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560EB57920CC4C6600C8EC0C /* Assets.xcassets */; };
 		560EB57D20CC4C6600C8EC0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560EB57B20CC4C6600C8EC0C /* LaunchScreen.storyboard */; };
+		560EB58520CC4C8100C8EC0C /* NoiseMachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EB58420CC4C8100C8EC0C /* NoiseMachineViewController.swift */; };
+		560EB58720CC559D00C8EC0C /* NoiseMachine.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 560EB58620CC4FD200C8EC0C /* NoiseMachine.m4a */; };
+		560EB58920CC5FB500C8EC0C /* noiseMachineLoop.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 560EB58820CC5FB500C8EC0C /* noiseMachineLoop.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		560EB57920CC4C6600C8EC0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		560EB57C20CC4C6600C8EC0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		560EB57E20CC4C6600C8EC0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		560EB58420CC4C8100C8EC0C /* NoiseMachineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseMachineViewController.swift; sourceTree = "<group>"; };
+		560EB58620CC4FD200C8EC0C /* NoiseMachine.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = NoiseMachine.m4a; path = NoiseMachine/NoiseMachine.m4a; sourceTree = SOURCE_ROOT; };
+		560EB58820CC5FB500C8EC0C /* noiseMachineLoop.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = noiseMachineLoop.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,12 @@
 		560EB56E20CC4C6500C8EC0C /* NoiseMachine */ = {
 			isa = PBXGroup;
 			children = (
+				560EB58620CC4FD200C8EC0C /* NoiseMachine.m4a */,
+				560EB58820CC5FB500C8EC0C /* noiseMachineLoop.m4a */,
 				560EB56F20CC4C6500C8EC0C /* AppDelegate.swift */,
 				560EB57120CC4C6500C8EC0C /* ViewController.swift */,
 				560EB57320CC4C6500C8EC0C /* Main.storyboard */,
+				560EB58420CC4C8100C8EC0C /* NoiseMachineViewController.swift */,
 				560EB57920CC4C6600C8EC0C /* Assets.xcassets */,
 				560EB57B20CC4C6600C8EC0C /* LaunchScreen.storyboard */,
 				560EB57E20CC4C6600C8EC0C /* Info.plist */,
@@ -99,6 +108,11 @@
 				TargetAttributes = {
 					560EB56B20CC4C6500C8EC0C = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -128,6 +142,8 @@
 				560EB57D20CC4C6600C8EC0C /* LaunchScreen.storyboard in Resources */,
 				560EB57A20CC4C6600C8EC0C /* Assets.xcassets in Resources */,
 				560EB57520CC4C6500C8EC0C /* Main.storyboard in Resources */,
+				560EB58720CC559D00C8EC0C /* NoiseMachine.m4a in Resources */,
+				560EB58920CC5FB500C8EC0C /* noiseMachineLoop.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +156,7 @@
 			files = (
 				560EB57220CC4C6500C8EC0C /* ViewController.swift in Sources */,
 				560EB57020CC4C6500C8EC0C /* AppDelegate.swift in Sources */,
+				560EB58520CC4C8100C8EC0C /* NoiseMachineViewController.swift in Sources */,
 				560EB57820CC4C6500C8EC0C /* NoiseMachine.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
